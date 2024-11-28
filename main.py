@@ -71,7 +71,7 @@ def click_to_continue():
     ok_button.config(state = DISABLED)
     global player
     player = player1
-    pause_button.config(state=NORMAL)
+    # pause_button.config(state=NORMAL)
     return 
 
 # def click_to_continue():
@@ -95,22 +95,22 @@ e1.grid(row=7,
         )
 e1.insert(0,"Player2")
 
-def click_to_pause():
-    player1_btn.config(state=DISABLED)
-    player2_btn.config(state=DISABLED)
-    resume_button.config(state=NORMAL)
-    return
+# def click_to_pause():
+#     player1_btn.config(state=DISABLED)
+#     player2_btn.config(state=DISABLED)
+#     resume_button.config(state=NORMAL)
+#     return
     
 
 ok_button = Button(root,text = "click to start game", command=click_to_continue,bg="green")
 
 ok_button.grid(row = 0, column = 6,columnspan=2)
-pause_button = Button(root,text = "click to pause game", command=click_to_pause,bg="green",state=DISABLED)
+# pause_button = Button(root,text = "click to pause game", command=click_to_pause,bg="green",state=DISABLED)
 
-pause_button.grid(row = 0, column = 9,columnspan=2)
+# pause_button.grid(row = 0, column = 9,columnspan=2)
 
-resume_button = Button(root,text = "click to continue",  bg = "green", state=DISABLED)
-resume_button.grid(row = 0, column = 12,columnspan=2)
+# resume_button = Button(root,text = "click to continue",  bg = "green", state=DISABLED)
+# resume_button.grid(row = 0, column = 12,columnspan=2)
 e2 = Entry(root,
            textvariable="Player1",
            font=('Verdana',20),
